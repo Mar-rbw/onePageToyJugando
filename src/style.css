@@ -1,11 +1,14 @@
+/*Area seccion Header*/
 nav {
   position: fixed;
 }
 div.redondo {
-  border-radius: 90px;
-  background-color: yellow;
-  text-align: center;
-  align-content: center;
+  /*layout*/
+  width: 752px;
+  height: 48px;
+  /*Styles*/
+  border-radius: 33px;
+  background: #fff;
 }
 
 section.banner {
@@ -54,7 +57,7 @@ p.banner {
   line-height: 32px; /* 138.889% */
 }
 
-h1.servicios{
+h1.servicios {
   text-align: center;
 }
 

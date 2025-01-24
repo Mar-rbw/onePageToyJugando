@@ -1,0 +1,63 @@
+nav {
+  position: fixed;
+}
+div.redondo {
+  border-radius: 90px;
+  background-color: yellow;
+  text-align: center;
+  align-content: center;
+}
+
+section.banner {
+  /*layout*/
+  width: 1440px;
+  height: 344px;
+  flex-shrink: 0;
+  /*Styles*/
+  background: var(--Brand-Secondary-CTA, #4d45d6);
+}
+h1.banner {
+  /*Layout*/
+  display: flex;
+  width: 1016px;
+  height: 87px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  /*Typography*/
+  color: var(--Brand-Primary, #8ce0d5);
+  text-align: center;
+
+  /* Web/H1 */
+  font-family: Rubik;
+  font-size: 47.78px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+p.banner {
+  /*layout*/
+  display: flex;
+  width: 768px;
+  height: 127px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  /*Typography*/
+  color: #fff;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 23.04px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 138.889% */
+}
+
+h1.servicios{
+  text-align: center;
+}
+
+h2.footer {
+  text-align: center;
+}

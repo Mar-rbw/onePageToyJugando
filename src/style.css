@@ -1,7 +1,19 @@
 /*Area seccion Header*/
+header.hero{
+  background-image:url(/public/HERO.png);
+}
+
 nav {
   position: fixed;
+  text-align: center;
+  width: 100%;
 }
+
+a.logo {
+  width: 267px;
+  height: 176px;
+}
+
 div.redondo {
   /*layout*/
   width: 752px;
@@ -13,7 +25,7 @@ div.redondo {
 
 section.banner {
   /*layout*/
-  width: 1440px;
+  width: 100%;
   height: 344px;
   flex-shrink: 0;
   /*Styles*/

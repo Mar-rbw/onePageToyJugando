@@ -1,6 +1,6 @@
 /*Area seccion Header*/
 header.hero {
-  background-image: url(/public/HERO.png);
+  background-image: url(/HERO.png);
 }
 
 nav {
@@ -71,6 +71,9 @@ div.row.hero {
 }
 
 h1.hero {
+  /*Layout*/
+  border-radius: 23px;
+  background: var(--Brand-Primary2, #02aab6);
   /*Typography*/
   color: #fff;
   font-family: Rubik;
@@ -257,11 +260,177 @@ p.features {
 /*Area seccion servicios*/
 
 h1.servicios {
+  /*Typography*/
+  color: #000;
   text-align: center;
+
+  /* Web/H1 */
+  font-family: Rubik;
+  font-size: 47.78px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+h2.servicios {
+  color: #000;
+
+  /* Web/H2 */
+  font-family: Rubik;
+  font-size: 33.18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+p.servicios {
+  color: #000;
+
+  /* Web/p */
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+button.servicios {
+  width: 289px;
+  height: 95px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: var(--Brand-Secondary-CTA, #4d45d6);
+  color: #fff;
+  border: transparent;
+  color: #fff;
+  text-align: center;
+
+  /* Web/H2 */
+  font-family: Rubik;
+  font-size: 33.18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 /*Area seccion Contador*/
+div.row.contador {
+  border-radius: 33px;
+  background: linear-gradient(180deg, #c5ebe4 -21.85%, #52c1ad 47.75%);
+}
+
+p.contador.numeros {
+  color: #fff;
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p.contador.numeros.anios::after {
+  content: "años";
+  color: #fff;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p.contador.numeros.horas::after {
+  content: "hrs";
+  color: #fff;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p.contador.texto {
+  color: #072594;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h2.testimonio {
+  /*Typography*/
+  color: #000;
+  text-align: center;
+
+  /* Web/H2 */
+  font-family: Rubik;
+  font-size: 33.18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+h2.testimonio::after {
+  content: "confianza, aprendizaje y seguridad.";
+  color: var(--Brand-Secondary-CTA, #4d45d6);
+
+  /* Web/H2 */
+  font-family: Rubik;
+  font-size: 33.18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
 /*Area seccion expansion*/
+
+h1.expansion {
+  /*Layout*/
+  border-radius: 23px;
+  background: var(--Brand-Primary2, #02aab6);
+  /*Typography*/
+  color: #fff;
+  font-family: Rubik;
+  font-size: 47.78px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 159.4%; /* 76.161px */
+}
+
+p.expansion.superior {
+  color: #000;
+  font-family: "Roboto Flex";
+  font-size: 33.18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p.expansion.inferior {
+  color: #000;
+  font-family: "Roboto Flex";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+button.expansion {
+  width: 289px;
+  height: 95px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: var(--Brand-Primary2, #02aab6);
+  color: #fff;
+  border: transparent;
+  color: #fff;
+  text-align: center;
+
+  /* Web/H2 */
+  font-family: Rubik;
+  font-size: 33.18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
 /*Area seccion Colaboradores*/
 
@@ -277,4 +446,68 @@ footer {
 
 h2.footer {
   text-align: center;
+}
+
+h3.footer{
+  color: #FFF;
+
+/* Web/H3 */
+font-family: Rubik;
+font-size: 23.04px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+a.footer{
+  color: #FFF;
+
+/* Web/H3 */
+font-family: Rubik;
+font-size: 23.04px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+a.footer{
+  text-decoration: none;
+  color: #FFF;
+
+/* Web/H3 */
+font-family: Rubik;
+font-size: 23.04px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+h2.footer{
+  color: #FFF;
+text-align: center;
+
+/* Web/H2 */
+font-family: Rubik;
+font-size: 33.18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+small.footer{
+  /*Layout*/
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /*Typography*/
+  color: #FFF;
+text-align: center;
+
+/* Web/small */
+font-family: Rubik;
+font-size: 13.33px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }

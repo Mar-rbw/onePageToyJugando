@@ -1,22 +1,21 @@
 /*Area seccion Header*/
+nav {
+  position: fixed;
+  width: 100%;
+}
+
 header.hero {
   background-image: url(/HERO.png);
 }
 
-nav {
-  position: fixed;
-  text-align: center;
-  width: 100%;
-}
-
 a.logo {
-  width: 267px;
-  height: 176px;
+  width: 50%;
+  height: 50%;
 }
 
-div.redondo {
+div.redondo.hero {
   /*layout*/
-  width: 752px;
+  width: 50%;
   height: 48px;
   /*Styles*/
   border-radius: 33px;
@@ -51,8 +50,8 @@ button.hero {
   height: 95px;
   flex-shrink: 0;
   border-radius: 50px;
-  background: var(--Brand-Primary2, #02aab6);
-  color: #fff;
+  background: var(--Brand-Primary2, #8CE0D5);
+  color: #4D45D6;
   border: transparent;
 
   /* Web/H3 */
@@ -63,7 +62,7 @@ button.hero {
   line-height: normal;
 }
 
-div.row.hero {
+div.row.hero.inferior {
   width: 534px;
   flex-direction: column;
   align-items: flex-start;

@@ -30,10 +30,10 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>Toy Jugando</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <!--Inicio Header-->
     <header>
-      <nav>
+      <nav class="navbar fixed-top">
         <div class="row header">
           <div class="col-3 header logo">
             <a class="logo" href="/home">
@@ -44,11 +44,11 @@
               />
             </a>
           </div>
-          <div class="col-6 header opciones">
-            <a class="header link" href="">Inicio</a>
-            <a class="header link" href="">Método</a>
-            <a class="header link" href="">Servicios</a>
-            <a class="header link" href="">Contacto</a>
+          <div class="col-6 navbar-nav header opciones">
+            <a class="header link" href="#section1">Inicio</a>
+            <a class="header link" href="#section2">Método</a>
+            <a class="header link" href="#section3">Servicios</a>
+            <a class="header link" href="#section4">Contacto</a>
           </div>
           <div class="col-3 header button">
             <button class="header">Agendar Cuidado</button>
@@ -58,7 +58,7 @@
     </header>
     <!--Fin Header-->
     <!-- Inicio seccion Hero -->
-    <section class="hero">
+    <section class="hero" id="section1">
       <div class="row">
         <div class="col-6 hero">
           <h1 class="hero">Cuidamos con amor,</h1>
@@ -81,7 +81,7 @@
     </section>
     <!--Fin seccion Banner-->
     <!--Inicio Hero2 -->
-    <section class="hero2">
+    <section class="hero2" id="section2">
       <div class="hero2 contenido">
         <div class="hero2 texto">
           <h1 class="hero2">Nuestro método es aprender jugando</h1>
@@ -120,7 +120,7 @@
     </section>
     <!--Fin Hero2 -->
     <!--Inicio seccion features-->
-    <section class="features">
+    <section class="features" id="section3">
       <div class="row features">
         <div class="col-3 features">
           <span>
@@ -372,7 +372,7 @@
     </section>
     <!--Fin seccion colaboradores-->
     <!--Inicio Footer-->
-    <footer class="footer">
+    <footer class="footer" id="section4">
       <div>
         <div class="row">
           <div class="col-4">

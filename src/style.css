@@ -1,13 +1,16 @@
 /*Area Barra de header*/
 nav {
+  /*Layout*/
   position: fixed;
   display: flex;
-  align-items: center; /* Centra verticalmente los elementos */
-  justify-content: space-between; /* Espacia los elementos de manera uniforme */
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
+  z-index: 1;
 }
 
 div.row.header {
+  /*Layout*/
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,67 +19,45 @@ div.row.header {
 }
 
 div.header.logo {
+  /*Layout*/
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 img.header {
+  /*Layout*/
   width: 20vw;
 }
 
 div.header.opciones {
+  /*Layout*/
   display: flex;
   flex-direction: row;
   border-radius: 2.15vw;
-  background: #fff;
   justify-content: space-evenly;
   align-self: center;
+  /*Styles*/
+  background: #fff;
 }
 
 a.header.link {
+  /*Layout*/
   text-decoration: none;
-  color: #000;
   text-align: center;
+  margin: 1vw;
+  /*Styles*/
+  color: #000;
+  /*Typography*/
   font-family: Roboto;
-  font-size: 2.2vw;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 0.5vw;
-}
-
-/*Area Hero1*/
-section.hero {
-  display: flex;
-  align-items: center;
-  background: url(/public/HERO.png) lightgray 50% / cover no-repeat;
-  padding-bottom: 10vw;
-}
-
-div.col-6.hero {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20vw;
-  padding-left: 5vw;
-  margin-bottom: 3vw;
-}
-
-h1.hero {
-  margin: 0vw -50vw 1vw 0vw;
-  padding: 0vw 1vw 0vw 1vw;
-  width: fit-content;
-  border-radius: 1.5vw;
-  background: var(--Brand-Primary2, #02aab6);
-  color: #fff;
-  font-family: Rubik;
-  font-size: 4vw;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 159.4%; /* 76.161px */
 }
 
 div.header.button {
+  /*Layout*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,15 +66,16 @@ div.header.button {
 }
 
 button.header {
+  /*Layout*/
   width: fit-content;
-  padding-bottom: 1vw;
-  padding-top: 1vw;
+  padding: 1.4vw 1.85vw 1.4vw 1.85vw;
   border-color: transparent;
   border-radius: 6.5vw;
+  text-align: center;
+  /*Styles*/
   background: var(--Brand-Primary, #8ce0d5);
   color: var(--Brand-Secondary-CTA, #4d45d6);
-  text-align: center;
-
+  /*Typography*/
   /* Web/H3 */
   font-family: Rubik;
   font-size: 2vw;
@@ -102,25 +84,62 @@ button.header {
   line-height: normal;
 }
 
+/*Area Hero1*/
+section.hero {
+  /*Layout*/
+  display: flex;
+  align-items: center;
+  padding-bottom: 5vw;
+  /*Styles*/
+  background: url(/public/HERO.png) lightgray 50% / cover no-repeat;
+}
+
+div.col-6.hero {
+  /*Layout*/
+  display: flex;
+  flex-direction: column;
+  padding-top: 20vw;
+  padding-left: 5vw;
+  margin-bottom: 3vw;
+}
+
+h1.hero {
+  /*Layout*/
+  width: fit-content;
+  margin: 0vw -50vw 1vw 0vw;
+  padding: 0vw 1vw 0vw 1vw;
+  border-radius: 1.5vw;
+  /*Styles*/
+  background: var(--Brand-Primary2, #02aab6);
+  color: #fff;
+  /*Typography*/
+  font-family: Rubik;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 159.4%; /* 76.161px */
+}
+
 /*Area banner*/
 section.banner {
   /*Layout*/
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra horizontalmente */
-  justify-content: center; /* Centra verticalmente */
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  /*Typography*/
+  /*Styles*/
   background: var(--Brand-Secondary-CTA, #4d45d6);
 }
 
 h1.banner {
   /*Layout*/
-  width: 75vw;
-  padding-bottom: 1vw;
-  /*Typography*/
+  width: 100vw;
+  padding-bottom: 5vw;
+  padding-top: 5vw;
+  /*Styles*/
   color: var(--Brand-Primary, #8ce0d5);
-
+  /*Typography*/
   /* Web/H1 */
   font-family: Rubik;
   font-size: 4.3vw;
@@ -131,76 +150,95 @@ h1.banner {
 
 p.banner {
   /*layout*/
-  width: 75vw;
-  /*Typography*/
-  color: #fff;
+  width: 85vw;
   text-align: center;
+  padding-bottom: 5vw;
+  /*Styles*/
+  color: #fff;
+  /*Typography*/
   font-family: Rubik;
   font-size: 2.5vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 128.889%; /* 138.889% */
+  line-height: 128.889%;
 }
 
 /*Area Hero2*/
 section.hero2 {
+  /*Styles*/
   background: var(--Brand-Complement, #fff2f1);
 }
 
 div.hero2.contenido {
+  /*Layout*/
   display: flex;
-  flex-direction: row; /* Organiza en dos columnas */
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 2.5vw; /* Espaciado entre texto e imágenes */
+  gap: 2.5vw;
 }
 
 div.hero2.texto {
-  padding-left: 3vw;
-  padding-right: 3vw;
+  /*Layout*/
+  margin-left: 5vw;
+  margin-right: 3vw;
 }
 
 h1.hero2 {
+  /*Layout*/
+  padding-bottom: 2vw;
+  /*Styles*/
   color: #000;
-
+  /*Typography*/
   /* Web/H1 */
   font-family: Rubik;
-  font-size: 3.11vw;
+  font-size: 5vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 h2.hero2 {
+  /*Layout*/
+  padding-bottom: 2vw;
+  /*Styles*/
   color: var(--Brand-Secondary-CTA, #4d45d6);
-
+  /*Typography*/
   /* Web/H2 */
   font-family: Rubik;
-  font-size: 2.16vw;
+  font-size: 2.56vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 li.hero2 {
+  /*Layout*/
+  padding-right: 8vw;
+  /*Styles*/
   color: #000;
+  /*Typography*/
   font-family: Rubik;
-  font-size: 1.5vw;
+  font-size: 1.7vw;
   font-style: normal;
   font-weight: 500;
   line-height: 160.59%; /* 160.59% */
 }
 
 button.hero2 {
+  /*Layout*/
   display: flex;
   border-color: transparent;
   border-radius: 3.26vw;
-  margin-left: 25vw;
-  background: var(--Brand-Primary2, #02aab6);
+  margin-left: 33.3%;
+  margin-top: 10%;
+  padding: 1.4vw 2.85vw 1.4vw 2.85vw;
   align-items: center;
-  color: #fff;
   text-align: center;
-
+  /*Styles*/
+  background: var(--Brand-Primary2, #02aab6);
+  color: #fff;
+  /*Typography*/
   /* Web/H2 */
   font-family: Rubik;
   font-size: 2.16vw;
@@ -209,39 +247,53 @@ button.hero2 {
   line-height: normal;
 }
 
+div.hero2.imagenes {
+  /*Layout*/
+  padding-top: 2vw;
+  padding-bottom: 10vw;
+}
+
 img.hero2 {
-  border-radius: 2.15vw;
-  box-shadow: 0vw 0.26vw 0.26vw 0vw rgba(0, 0, 0, 0.25);
-  margin: 1vw;
+  /*Layout*/
   width: 30vw;
+  border-radius: 2.15vw;
+  margin: 1vw;
+  /*Styles*/
+  box-shadow: 0vw 0.26vw 0.26vw 0vw rgba(0, 0, 0, 0.25);
 }
 
 /*Area Feature*/
 
 section.features {
+  /*Layout*/
   display: flex;
 }
 
 div.row.features {
+  /*Layout*/
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
 }
 
 div.col-3.features {
+  /*Layout*/
   width: 25vw;
   padding: 4vw 3vw 4vw 3vw;
 }
 
 img.features {
+  /*Layout*/
   width: 22vw;
   height: 23.5vw;
 }
 
 h2.features {
-  color: var(--Brand-Secondary-CTA, #4d45d6);
+  /*Layout*/
   text-align: center;
-
+  /*Styles*/
+  color: var(--Brand-Secondary-CTA, #4d45d6);
+  /*Typography*/
   /* Web/H2 */
   font-family: Rubik;
   font-size: 2.16vw;
@@ -251,9 +303,11 @@ h2.features {
 }
 
 p.features {
-  color: #000;
+  /*Layout*/
   text-align: center;
-
+  /*Styles*/
+  color: #000;
+  /*Typography*/
   /* Web/p */
   font-family: Rubik;
   font-size: 1.042vw;
@@ -265,25 +319,28 @@ p.features {
 /*Area servicios*/
 
 select.servicios {
+  /*Layout*/
   display: flex;
-  margin-bottom: 20vw;
 }
 
 h1.servicios {
-  padding-bottom: 4vw;
-  /*Typography*/
-  color: #000;
+  /*Layout*/
+  padding-top: 5vw;
+  padding-bottom: 10vw;
   text-align: center;
-
+  /*Styles*/
+  color: #000;
+  /*Typography*/
   /* Web/H1 */
   font-family: Rubik;
-  font-size: 6.197vw;
+  font-size: 5vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 img.servicios {
+  /*Layout*/
   width: 42vw;
   height: 28vw;
   padding: 0 0 2vw 3vw;
@@ -291,6 +348,7 @@ img.servicios {
 }
 
 div.col-5.servicios {
+  /*layout*/
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -298,179 +356,216 @@ div.col-5.servicios {
 }
 
 h2.servicios {
+  /*Layout*/
+  padding-bottom: 1vw;
+  /*Styles*/
   color: #000;
-
+  /*Typography*/
   /* Web/H2 */
   font-family: Rubik;
-  font-size: 4.304vw;
+  font-size: 3.304vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 p.servicios {
+  /*Layout*/
+  padding-bottom: 2vw;
+  /*Stles*/
   color: #000;
-
+  /*Typography*/
   /* Web/p */
   font-family: Rubik;
-  font-size: 2.08vw;
+  font-size: 1.28vw;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 150% */
 }
 
 button.servicios {
+  /*Layout*/
   border-radius: 6.485vw;
-  background: var(--Brand-Secondary-CTA, #4d45d6);
-  color: #fff;
   text-align: center;
   border-color: transparent;
-
+  padding: 1.2vw 3vw 1.2vw 3vw;
+  /*Styles*/
+  background: var(--Brand-Secondary-CTA, #4d45d6);
+  color: #fff;
+  /*Typography*/
   /* Web/H3 */
   font-family: Rubik;
-  font-size: 3vw;
+  font-size: 2.1vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 /*Area de contador*/
-
 h1.contador {
-  margin-top: 5vw;
-  margin-bottom: 3vw;
-  color: #000;
+  /*Layout*/
+  padding-top: 10vw;
+  padding-bottom: 6vw;
   text-align: center;
-
+  /*Styles*/
+  color: #000;
+  /*Typography*/
   /* Web/H1 */
   font-family: Rubik;
-  font-size: 6.197vw;
+  font-size: 3.9vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 div.row.contador {
-  border-radius: 4.280vw;
-  background: linear-gradient(180deg, #c5ebe4 -21.85%, #52c1ad 47.75%);
+  /*Layout*/
+  border-radius: 4.28vw;
   text-align: center;
   justify-content: center;
-  margin: 2vw 5vw 5vw 5vw;
+  padding: 4vw;
+  margin: 0 8vw 0 8vw;
+  /*Styles*/
+  background: linear-gradient(180deg, #c5ebe4 -21.85%, #52c1ad 47.75%);
 }
 
 p.contador.numeros.anios {
+  /*layout*/
+  /*Styles*/
   color: #fff;
+  /*Typography*/
   font-family: Inter;
-  font-size: 7.3vw;
+  font-size: 5.3vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 p.contador.numeros.anios::after {
-  content: "años";
+  /*Layout*/
+  /*Styles*/
   color: #fff;
+  /*Typography*/
+  content: "años";
   font-family: Inter;
-  font-size: 3.67vw;
+  font-size: 2.67vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 p.contador.texto {
+  /*Styles*/
   color: #072594;
+  /*Typography*/
   font-family: Roboto;
-  font-size: 3.15vw;
+  font-size: 2.15vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 3vw;
 }
 
 p.contador.numeros.horas {
+  /*Styles*/
   color: #fff;
+  /*Typography*/
   font-family: Inter;
-  font-size: 7.3vw;
+  font-size: 5.3vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-left:-4vw;
 }
 
 p.contador.numeros.horas::after {
-  content: "hrs";
+  /*Styles*/
   color: #fff;
+  /*Typography*/
+  content: "hrs";
   font-family: Inter;
-  font-size: 3.67vw;
+  font-size: 2.67vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 p.contador.numeros {
+  /*Styles*/
   color: #fff;
+  /*Typography*/
   font-family: Inter;
-  font-size: 7.3vw;
+  font-size: 5.3vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 3vw;
 }
 
 /*Area Testimonio*/
 
 div.testimonio.titulo {
+  /*Layout*/
   display: flex;
   justify-content: center;
 }
 
 h2.testimonio {
-  color: #000;
+  /*Layout*/
+  padding-top: 10vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
   text-align: center;
-
+  /*Styles*/
+  color: #000;
+  /*Typography*/
   /* Web/H2 */
   font-family: Rubik;
-  font-size: 4.3vw;
+  font-size: 2.9vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 h2.testimonio::after {
-  content: "confianza, aprendizaje y seguridad. ";
+  /*Styles*/
   color: var(--Brand-Secondary-CTA, #4d45d6);
-
+  /*Typography*/
+  content: "confianza, aprendizaje y seguridad.";
   /* Web/H2 */
   font-family: Rubik;
-  font-size: 4.3vw;
+  font-size: 2.9vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 div.testimonio.contenido {
+  /*Layout*/
   display: flex;
   flex-direction: column;
   padding: 1vw 12vw 1vw 12vw;
   border-radius: 4.28vw;
   margin: 4vw 10vw 8vw 10vw;
+  /*Styles*/
   border: 3px solid #fff;
   box-shadow: 0px 0.52vw 1.17vw 0.39vw rgba(0, 0, 0, 0.25);
 }
 
 p.testimonio.nombre {
+  /*Styles*/
   color: #000;
+  /*Typography*/
   font-family: Roboto Flex;
-  font-size: 2.99vw;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 800;
-  line-height: 138.889%; /* 138.889% */
+  line-height: 138.889%;
 }
 
 p.testimonio.texto {
+  /*Styles*/
   color: #000;
+  /*Typography*/
   font-family: Roboto Flex;
-  font-size: 2.99vw;
+  font-size: 2.5vw;
   font-style: italic;
   font-weight: 400;
   line-height: 4.15vw;
@@ -479,70 +574,78 @@ p.testimonio.texto {
 /*Area de Expansion*/
 
 section.expansion {
+  /*Layout*/
   display: flex;
+  /*Styles*/
   background: var(--Brand-Complement2, #e9e3e1);
   box-shadow: 0vw 0.52vw 10.9vw 0vw rgba(0, 0, 0, 0.25) inset;
 }
 
-div.expansion {
-  text-align: start;
-  margin-top: 5vw;
-}
-
 h1.expansion {
+  /*Layout*/
   width: fit-content;
   padding: 0 1vw 0 1vw;
   margin-top: 1vw;
   border-radius: 2.983vw;
+  /*Styles*/
   background: var(--Brand-Primary2, #02aab6);
   color: #fff;
+  /*Typography*/
   font-family: Rubik;
-  font-size: 6.197vw;
+  font-size: 3.5vw;
   font-style: normal;
   font-weight: 500;
   line-height: 159.4%;
 }
 
 p.expansion.superior {
-  margin-top: 3vw;
-  padding-left: 1vw;
+  /*Layout*/
+padding: 3vw 4vw 3vw 0;
+  /*Styles*/
   color: #000;
+  /*Typography*/
   font-family: Roboto Flex;
-  font-size: 4.3vw;
+  font-size: 3.4vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 p.expansion.inferior {
-  margin-top: 3vw;
-  padding-left: 1vw;
+  /*Layout*/
+padding-right: 14vw;
+  /*Styles*/
   color: #000;
+  /*Typography*/
   font-family: Roboto Flex;
-  font-size: 2.075vw;
+  font-size: 1.2vw;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 150% */
 }
 
 div.expansion.button {
+  /*layout*/
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
 button.expansion {
+  /*Layout*/
+  padding: 1.5vw 3vw 1.5vw 3vw;
+  margin: 3vw 15vw 7vw 0;
+
   border-radius: 6.485vw;
-  margin-bottom: 5vw;
-  margin-top: 3vw;
-  background: var(--Brand-Primary2, #02aab6);
-  color: #fff;
   text-align: center;
   border-color: transparent;
-
+  /*Styles*/
+  background: var(--Brand-Primary2, #02aab6);
+  color: #fff;
+/*Typography*/
   /* Web/H2 */
   font-family: Rubik;
-  font-size: 4.3vw;
+  font-size: 2.6vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -550,15 +653,18 @@ button.expansion {
 
 /*Area de Colaboradores*/
 div.colaboradores {
+  /*Layout*/
   display: flex;
   justify-content: center;
   border-radius: 160.5vw;
 }
 
 h1.colaboradores {
-  color: #000;
+  /*Layout*/
   text-align: center;
-
+  /*Styles*/
+  color: #000;
+  /*Typography*/
   /* Web/H1 */
   font-family: Rubik;
   font-size: 6.197vw;
@@ -568,6 +674,7 @@ h1.colaboradores {
 }
 
 img.colaboradores {
+  /*layout*/
   width: 100vw;
   margin-bottom: 1vw;
 }
@@ -575,11 +682,14 @@ img.colaboradores {
 /*Area de Footer*/
 
 footer.footer {
-  background-color: #4d45d6;
+  /*Layout*/
   padding-top: 20vw;
+  /*Styles*/
+  background-color: #4d45d6;
 }
 
 span.footer {
+  /*Layout*/
   display: flex;
   justify-content: center;
   padding-left: 1vw;
@@ -587,19 +697,23 @@ span.footer {
 }
 
 img.footer {
+  /*layout*/
   width: 10vw;
 }
 
 div.footer.texto {
+  /*Layout*/
   display: flex;
   justify-content: start;
 }
 
-h3 {
+h3.footer {
+  /*Layout*/
   margin-left: -5vw;
   margin-right: -5vw;
+  /*Styles*/
   color: #fff;
-
+/*Typography*/
   /* Web/H3 */
   font-family: Rubik;
   font-size: 2vw;
@@ -609,52 +723,63 @@ h3 {
 }
 
 div.footer.link {
+  /*Layout*/
   display: flex;
   flex-direction: column;
 }
 
 a.footer {
-  text-decoration: transparent;
-  padding-bottom: 2vw;
+  /*layout*/
+  padding-bottom: 3vw;
   margin-left: 9vw;
   padding-right: 5vw;
+  /*Styles*/
+  text-decoration: transparent;
   color: #fff;
-
+  /*Typography*/
   /* Web/H3 */
   font-family: Rubik;
-  font-size: 2vw;
+  font-size: 1.7vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 div.footer.redes {
+  /*Layout*/
   display: flex;
   justify-content: center;
 }
 
 h2.footer {
-  color: #fff;
+  /*Layout*/
   text-align: center;
-
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  /*Styles*/
+  color: #fff;
+  /*Typography*/
   /* Web/H2 */
   font-family: Rubik;
-  font-size: 4.3vw;
+  font-size: 3.3vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 div.row.footer {
+  /*Layout*/
   display: inline;
   padding-left: 25vw;
 }
 
-img.footer.redes{
+img.footer.redes {
+  /*Layout*/
   width: 10vw;
 }
 
 div.footer.small {
+  /*Layout*/
   display: flex;
   justify-content: center;
   margin-top: 10vw;
@@ -662,9 +787,11 @@ div.footer.small {
 }
 
 small.footer {
-  color: #fff;
+  /*Layout*/
   text-align: center;
-
+  /*Styles*/
+  color: #fff;
+  /*Typographt*/
   /* Web/small */
   font-family: Rubik;
   font-size: 1.73vw;

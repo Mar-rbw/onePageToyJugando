@@ -27,16 +27,20 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Toy Jugando</title>
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <!--Inicio Header-->
     <header>
-      <nav class="navbar fixed-top">
+      <nav class="navbar">
         <div class="row header">
           <div class="col-3 header logo">
-            <a class="logo" href="/home">
+            <a class="logo" id="section0" href="#section0">
               <img
                 class="header"
                 src="public/Detalles_de_pago_6.png"
@@ -51,7 +55,9 @@
             <a class="header link" href="#section4">Contacto</a>
           </div>
           <div class="col-3 header button">
-            <button class="header">Agendar Cuidado</button>
+            <a href="https://wa.me/message/OLRGUY6NJDEOI1">
+              <button class="header">Agendar Cuidado</button>
+            </a>
           </div>
         </div>
       </nav>
@@ -101,7 +107,9 @@
             </li>
           </ul>
           <span>
-            <button class="hero2">Saber más</button>
+            <a class="desactivar" href="">
+              <button class="hero2">Saber más</button>
+            </a>
           </span>
         </div>
         <div class="hero2 imagenes">
@@ -203,7 +211,9 @@
               hijos, asegurando continuidad y un ambiente familiar para los
               niños.
             </p>
-            <button class="servicios">Contratar</button>
+            <a href="https://wa.me/message/OLRGUY6NJDEOI1"
+              ><button class="servicios">Contratar</button></a
+            >
           </div>
           <div class="col-1"></div>
         </div>
@@ -227,7 +237,9 @@
               cuidado de tu hijo. Ideal para salidas, eventos, reuniones,
               emergencias e imprevistos de última hora.
             </p>
-            <button class="servicios">Contratar</button>
+            <a href="https://wa.me/message/OLRGUY6NJDEOI1"
+              ><button class="servicios">Contratar</button>
+            </a>
           </div>
           <div class="col-1"></div>
         </div>
@@ -321,35 +333,32 @@
     <!--Inicio seccion expansion-->
     <section class="expansion">
       <div class="row">
-        <div class="col-6">
-          <span>
-            <img src="" alt="imagenCelular" />
-          </span>
-        </div>
-        <div class="col-6">
+        <div class="col-6"></div>
+        <div class="col-6 derecho">
           <div class="expansion">
-            <h1 class="expansion">Toy Jugando app tu</h1>
-            <h1 class="expansion">conexión directa con un</h1>
+            <h1 class="expansion">Nuestra aplicación</h1>
+            <h1 class="expansion">te ayuda a encontrar un</h1>
             <h1 class="expansion">cuidado seguro y cercano</h1>
           </div>
           <div>
             <p class="expansion superior">
-              Estamos en proceso de crecimiento y transformación, desarrollando
-              herramientas tecnológicas que nos permitirán llevar nuestro
-              servicio a más familias en distintas regiones.
+              Sigue nuestras plataformas para conocer novedades, actualizaciones
+              de la app y nuevas oportunidades para familias y cuidadoras.
             </p>
           </div>
           <div>
             <p class="expansion inferior">
-              Para que estés al tanto de nuestras actualizaciones, novedades y
-              avances, te invitamos a seguirnos en nuestras plataformas, donde
-              compartiremos noticias sobre nuestro proyecto, mejoras en la app y
-              nuevas oportunidades para familias y cuidadoras. ¡Acompáñanos en
-              este camino de expansión y crecimiento!
+              Con más de dos años de experiencia, somos una empresa de cuidado
+              infantil que combina cariño, diversión y seguridad. En Toy
+              Jugando, acompañamos con el corazón y educamos con el juego.
             </p>
           </div>
           <div class="expansion button">
-            <button class="expansion">Saber más</button>
+            <a
+              href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.linkedin.com/showcase/toy-jugando-app/&ved=2ahUKEwjR8frgor-LAxUmrJUCHZukBNUQjjh6BAgjEAE&usg=AOvVaw28NN74Rgn5chpqS9xj1KT1"
+            >
+              <button class="expansion">Saber más</button>
+            </a>
           </div>
         </div>
       </div>
@@ -372,72 +381,83 @@
     </section>
     <!--Fin seccion colaboradores-->
     <!--Inicio Footer-->
-    <footer class="footer">
-      <div>
-        <div class="row">
-          <div class="col-4">
-            <span class="footer">
-              <img class="footer" src="public/logo_or_4 2.png" alt="Logo.jpg" />
+    <footer class="footer" id="section4">
+      <div class="footer central">
+        <div class="footer izquierdo">
+          <h3 class="footer">
+            <br />En Toy Jugando, cuidamos con amor y dedicación, creando un
+            espacio seguro y acogedor donde cada niño pueda crecer feliz,
+            explorando el mundo a través del juego, la creatividad y el
+            descubrimiento.
+          </h3>
+          <img
+            class="footer izquierdo"
+            src="public/ToyJugandoFooter.png"
+            alt="Logo Footer Toyjugando"
+          />
+        </div>
+        <div class="footer derecho">
+          <span class="footer superior">
+            <a class="footer superior desactivar" href="">Sobre nosotros</a>
+            <a class="footer superior desactivar" href=""
+              >Términos y condiciones</a
+            >
+            <a class="footer superior" href="mailto:educuidado.spa@gmail.com"
+              >Contactanos</a
+            >
+            <a class="footer superior" href="mailto:educuidado.spa@gmail.com"
+              >educuidado.spa@gmail.com</a
+            >
+          </span>
+          <span class="footer inferior">
+            <h2 class="footer">Encuéntranos en:</h2>
+            <span class="footer inferior redes">
+              <a
+                class="footer inferior"
+                href="https://www.instagram.com/toyjugando.app?igsh=MW5tanhld3oxMzJ3aA=="
+              >
+                <img
+                  class="footer inferior"
+                  src="public/iconmonstr-instagram-14-240 1.png"
+                  alt="Logo Instagram"
+                />
+              </a>
+              <a
+                class="footer inferior"
+                href="https://www.facebook.com/share/15ipjcaPFj/"
+              >
+                <img
+                  class="footer inferior"
+                  src="public/iconmonstr-facebook-4-240 1.png"
+                  alt="Logo Facebook"
+                />
+              </a>
+              <a
+                class="footer inferior"
+                href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.linkedin.com/showcase/toy-jugando-app/&ved=2ahUKEwjR8frgor-LAxUmrJUCHZukBNUQjjh6BAgjEAE&usg=AOvVaw28NN74Rgn5chpqS9xj1KT1"
+              >
+                <img
+                  class="footer inferior"
+                  src="public/iconmonstr-linkedin-4-240 1.png"
+                  alt="Logo Linkedin"
+                />
+              </a>
+              <a
+                class="footer inferior"
+                href="https://wa.me/message/OLRGUY6NJDEOI1"
+              >
+                <img
+                  class="footer inferior"
+                  src="public/iconmonstr-whatsapp-4-240 1.png"
+                  alt="Logo Whatsapp"
+                />
+              </a>
             </span>
-          </div>
-          <div class="col-4">
-            <div class="footer texto">
-              <h3 class="footer">
-                ¡Hola!<br />
-                En Toy Jugando, cuidamos con amor y dedicación, creando un
-                espacio seguro y acogedor donde cada niño pueda crecer feliz,
-                explorando el mundo a través del juego, la creatividad y el
-                descubrimiento.
-              </h3>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="footer link">
-              <a class="footer" href="">Sobre Nosotros</a>
-              <a class="footer" href="">Contactanos</a>
-              <a class="footer" href="">Terminos y condiciones</a>
-              <a class="footer" href="">E-mail</a>
-            </div>
-          </div>
+          </span>
         </div>
       </div>
-      <div class="footer redes" id="section4">
-        <h2 class="footer">Encuéntranos en:</h2>
-      </div>
-      <div class="row footer">
-        <a href="https://www.facebook.com/share/15ipjcaPFj/">
-          <img
-            class="footer redes"
-            src="public/iconmonstr-facebook-4-240 1.png"
-            alt="logoFacebook"
-          />
-        </a>
-        <a
-          href="https://www.instagram.com/toyjugando.app?igsh=MW5tanhld3oxMzJ3aA=="
-          ><img
-            class="footer redes"
-            src="public/iconmonstr-instagram-14-240 1.png"
-            alt="logoInstagram"
-          />
-        </a>
-        <a
-          href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.linkedin.com/showcase/toy-jugando-app/&ved=2ahUKEwjR8frgor-LAxUmrJUCHZukBNUQjjh6BAgjEAE&usg=AOvVaw28NN74Rgn5chpqS9xj1KT1"
-          ><img
-            class="footer redes"
-            src="public/iconmonstr-linkedin-4-240 1.png"
-            alt="logoLinkedin"
-          />
-        </a>
-        <a href="https://wa.me/message/OLRGUY6NJDEOI1"
-          ><img
-            class="footer redes"
-            src="public/iconmonstr-whatsapp-4-240 1.png"
-            alt="logoWhatsapp"
-          />
-        </a>
-      </div>
       <div class="footer small">
-        <small class="footer">Hecho en Chile con amor </small>
+        <small class="footer">Hecho en Chile con amor</small>
       </div>
     </footer>
     <!--Fin Footer-->

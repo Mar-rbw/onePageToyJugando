@@ -1,7 +1,13 @@
+/*Desactivador*/
+.desactivar {
+  pointer-events: none;
+  opacity: 0;
+  cursor: not-allowed;
+}
+
 /*Area Barra de header*/
 nav {
   /*Layout*/
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,7 +21,8 @@ div.row.header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: -2vw;
+  margin-top: -1vw;
+  margin-bottom: -1.5vw;
 }
 
 div.header.logo {
@@ -27,7 +34,7 @@ div.header.logo {
 
 img.header {
   /*Layout*/
-  width: 20vw;
+  width: 15vw;
 }
 
 div.header.opciones {
@@ -49,8 +56,8 @@ a.header.link {
   /*Styles*/
   color: #000;
   /*Typography*/
-  font-family: Roboto;
-  font-size: 1.5vw;
+  font-family: Poppins;
+  font-size: 1.3vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -68,7 +75,7 @@ div.header.button {
 button.header {
   /*Layout*/
   width: fit-content;
-  padding: 1.4vw 1.85vw 1.4vw 1.85vw;
+  padding: 1.2vw 1.25vw 1.2vw 1.25vw;
   border-color: transparent;
   border-radius: 6.5vw;
   text-align: center;
@@ -77,8 +84,8 @@ button.header {
   color: var(--Brand-Secondary-CTA, #4d45d6);
   /*Typography*/
   /* Web/H3 */
-  font-family: Rubik;
-  font-size: 2vw;
+  font-family: Poppins;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -91,16 +98,18 @@ section.hero {
   align-items: center;
   padding-bottom: 5vw;
   /*Styles*/
-  background: url(/public/HERO.png) lightgray 50% / cover no-repeat;
+  background: url(/public/HERO.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 div.col-6.hero {
   /*Layout*/
   display: flex;
   flex-direction: column;
-  padding-top: 20vw;
+  padding-top: 10vw;
   padding-left: 5vw;
-  margin-bottom: 3vw;
+  margin-bottom: 10vw;
 }
 
 h1.hero {
@@ -110,11 +119,14 @@ h1.hero {
   padding: 0vw 1vw 0vw 1vw;
   border-radius: 1.5vw;
   /*Styles*/
-  background: var(--Brand-Primary2, #02aab6);
+  background: var(
+    --Fade-Ligth,
+    linear-gradient(270deg, #84dbe1 -21.87%, #02aab6 100%)
+  );
   color: #fff;
   /*Typography*/
-  font-family: Rubik;
-  font-size: 4vw;
+  font-family: Poppins;
+  font-size: 3.0vw;
   font-style: normal;
   font-weight: 500;
   line-height: 159.4%; /* 76.161px */
@@ -129,20 +141,23 @@ section.banner {
   justify-content: center;
   text-align: center;
   /*Styles*/
-  background: var(--Brand-Secondary-CTA, #4d45d6);
+  background-color: #4D45D6;
+  background-image: url(/public/img_banner.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: -2vw;
 }
 
 h1.banner {
   /*Layout*/
   width: 100vw;
-  padding-bottom: 5vw;
   padding-top: 5vw;
   /*Styles*/
   color: var(--Brand-Primary, #8ce0d5);
   /*Typography*/
   /* Web/H1 */
-  font-family: Rubik;
-  font-size: 4.3vw;
+  font-family: Poppins;
+  font-size: 3.3vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -156,8 +171,8 @@ p.banner {
   /*Styles*/
   color: #fff;
   /*Typography*/
-  font-family: Rubik;
-  font-size: 2.5vw;
+  font-family: Roboto Flex;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 500;
   line-height: 128.889%;
@@ -180,7 +195,7 @@ div.hero2.contenido {
 
 div.hero2.texto {
   /*Layout*/
-  margin-left: 5vw;
+  margin-left: 10vw;
   margin-right: 3vw;
 }
 
@@ -191,11 +206,11 @@ h1.hero2 {
   color: #000;
   /*Typography*/
   /* Web/H1 */
-  font-family: Rubik;
+  font-family: Poppins;
   font-size: 5vw;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  line-height: 120%;
 }
 
 h2.hero2 {
@@ -205,7 +220,7 @@ h2.hero2 {
   color: var(--Brand-Secondary-CTA, #4d45d6);
   /*Typography*/
   /* Web/H2 */
-  font-family: Rubik;
+  font-family: Poppins;
   font-size: 2.56vw;
   font-style: normal;
   font-weight: 500;
@@ -218,7 +233,7 @@ li.hero2 {
   /*Styles*/
   color: #000;
   /*Typography*/
-  font-family: Rubik;
+  font-family: Poppins;
   font-size: 1.7vw;
   font-style: normal;
   font-weight: 500;
@@ -240,7 +255,7 @@ button.hero2 {
   color: #fff;
   /*Typography*/
   /* Web/H2 */
-  font-family: Rubik;
+  font-family: Poppins;
   font-size: 2.16vw;
   font-style: normal;
   font-weight: 500;
@@ -251,6 +266,7 @@ div.hero2.imagenes {
   /*Layout*/
   padding-top: 2vw;
   padding-bottom: 10vw;
+  padding-right: 5vw;
 }
 
 img.hero2 {
@@ -258,8 +274,6 @@ img.hero2 {
   width: 30vw;
   border-radius: 2.15vw;
   margin: 1vw;
-  /*Styles*/
-  box-shadow: 0vw 0.26vw 0.26vw 0vw rgba(0, 0, 0, 0.25);
 }
 
 /*Area Feature*/
@@ -295,7 +309,7 @@ h2.features {
   color: var(--Brand-Secondary-CTA, #4d45d6);
   /*Typography*/
   /* Web/H2 */
-  font-family: Rubik;
+  font-family: Poppins;
   font-size: 2.16vw;
   font-style: normal;
   font-weight: 500;
@@ -309,8 +323,8 @@ p.features {
   color: #000;
   /*Typography*/
   /* Web/p */
-  font-family: Rubik;
-  font-size: 1.042vw;
+  font-family: Poppins;
+  font-size: 1.3vw;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 150% */
@@ -332,7 +346,7 @@ h1.servicios {
   color: #000;
   /*Typography*/
   /* Web/H1 */
-  font-family: Rubik;
+  font-family: Poppins;
   font-size: 5vw;
   font-style: normal;
   font-weight: 500;
@@ -343,8 +357,8 @@ img.servicios {
   /*Layout*/
   width: 42vw;
   height: 28vw;
-  padding: 0 0 2vw 3vw;
-  margin-left: -3vw;
+  margin-bottom: 9vw;
+  border-radius: 2.15vw;
 }
 
 div.col-5.servicios {
@@ -352,18 +366,19 @@ div.col-5.servicios {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-left: 2vw;
+  margin-left: 5vw;
 }
 
 h2.servicios {
   /*Layout*/
+  padding-top: 3vw;
   padding-bottom: 1vw;
   /*Styles*/
   color: #000;
   /*Typography*/
   /* Web/H2 */
-  font-family: Rubik;
-  font-size: 3.304vw;
+  font-family: Poppins;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -376,7 +391,7 @@ p.servicios {
   color: #000;
   /*Typography*/
   /* Web/p */
-  font-family: Rubik;
+  font-family: Poppins;
   font-size: 1.28vw;
   font-style: normal;
   font-weight: 500;
@@ -388,14 +403,14 @@ button.servicios {
   border-radius: 6.485vw;
   text-align: center;
   border-color: transparent;
-  padding: 1.2vw 3vw 1.2vw 3vw;
+  padding: 1.2vw 1.7vw 1.2vw 1.7vw;
   /*Styles*/
   background: var(--Brand-Secondary-CTA, #4d45d6);
   color: #fff;
   /*Typography*/
   /* Web/H3 */
-  font-family: Rubik;
-  font-size: 2.1vw;
+  font-family: Poppins;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -404,14 +419,14 @@ button.servicios {
 /*Area de contador*/
 h1.contador {
   /*Layout*/
-  padding-top: 10vw;
+  padding-top: 5vw;
   padding-bottom: 6vw;
   text-align: center;
   /*Styles*/
   color: #000;
   /*Typography*/
   /* Web/H1 */
-  font-family: Rubik;
+  font-family: Poppins;
   font-size: 3.9vw;
   font-style: normal;
   font-weight: 500;
@@ -517,8 +532,8 @@ h2.testimonio {
   color: #000;
   /*Typography*/
   /* Web/H2 */
-  font-family: Rubik;
-  font-size: 2.9vw;
+  font-family: Poppins;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -530,8 +545,8 @@ h2.testimonio::after {
   /*Typography*/
   content: "confianza, aprendizaje y seguridad.";
   /* Web/H2 */
-  font-family: Rubik;
-  font-size: 2.9vw;
+  font-family: Poppins;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -539,11 +554,12 @@ h2.testimonio::after {
 
 div.testimonio.contenido {
   /*Layout*/
+  width: 60vw;
   display: flex;
   flex-direction: column;
-  padding: 1vw 12vw 1vw 12vw;
+  padding: 4vw;
   border-radius: 4.28vw;
-  margin: 4vw 10vw 8vw 10vw;
+  margin: 4vw 10vw 8vw 20vw;
   /*Styles*/
   border: 3px solid #fff;
   box-shadow: 0px 0.52vw 1.17vw 0.39vw rgba(0, 0, 0, 0.25);
@@ -551,10 +567,10 @@ div.testimonio.contenido {
 
 p.testimonio.nombre {
   /*Styles*/
-  color: #000;
+  color: var(--Brand-Secondary-CTA, #4d45d6);
   /*Typography*/
-  font-family: Roboto Flex;
-  font-size: 2.5vw;
+  font-family: Poppins;
+  font-size: 1.7vw;
   font-style: normal;
   font-weight: 800;
   line-height: 138.889%;
@@ -564,11 +580,11 @@ p.testimonio.texto {
   /*Styles*/
   color: #000;
   /*Typography*/
-  font-family: Roboto Flex;
-  font-size: 2.5vw;
-  font-style: italic;
+  font-family: Poppins;
+  font-size: 1.5vw;
+  font-style: normal;
   font-weight: 400;
-  line-height: 4.15vw;
+  line-height: 3.15vw;
 }
 
 /*Area de Expansion*/
@@ -578,7 +594,10 @@ section.expansion {
   display: flex;
   /*Styles*/
   background: var(--Brand-Complement2, #e9e3e1);
-  box-shadow: 0vw 0.52vw 10.9vw 0vw rgba(0, 0, 0, 0.25) inset;
+  background-image: url(/public/img_section_app.png);
+  background-size: cover;
+  padding-top: 4vw;
+  padding-bottom: 2vw;
 }
 
 h1.expansion {
@@ -588,24 +607,31 @@ h1.expansion {
   margin-top: 1vw;
   border-radius: 2.983vw;
   /*Styles*/
-  background: var(--Brand-Primary2, #02aab6);
+  background: var(
+    --Fade-Ligth,
+    linear-gradient(270deg, #84dbe1 -21.87%, #4D45D6 100%)
+  );
   color: #fff;
   /*Typography*/
-  font-family: Rubik;
-  font-size: 3.5vw;
+  font-family: Poppins;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 500;
   line-height: 159.4%;
 }
 
+div.col-6.derecho{
+  padding-left: 8vw;
+}
+
 p.expansion.superior {
   /*Layout*/
-padding: 3vw 4vw 3vw 0;
+  padding: 2vw 4vw 1vw 0;
   /*Styles*/
   color: #000;
   /*Typography*/
-  font-family: Roboto Flex;
-  font-size: 3.4vw;
+  font-family: Poppins;
+  font-size: 2.0vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -613,11 +639,11 @@ padding: 3vw 4vw 3vw 0;
 
 p.expansion.inferior {
   /*Layout*/
-padding-right: 14vw;
+  padding-right: 14vw;
   /*Styles*/
   color: #000;
   /*Typography*/
-  font-family: Roboto Flex;
+  font-family: Poppins;
   font-size: 1.2vw;
   font-style: normal;
   font-weight: 500;
@@ -633,19 +659,18 @@ div.expansion.button {
 
 button.expansion {
   /*Layout*/
-  padding: 1.5vw 3vw 1.5vw 3vw;
+  padding: 1.2vw 1.7vw 1.2vw 1.7vw;
   margin: 3vw 15vw 7vw 0;
-
   border-radius: 6.485vw;
   text-align: center;
   border-color: transparent;
   /*Styles*/
-  background: var(--Brand-Primary2, #02aab6);
+  background: var(--Brand-Secondary-CTA, #4D45D6);
   color: #fff;
-/*Typography*/
+  /*Typography*/
   /* Web/H2 */
-  font-family: Rubik;
-  font-size: 2.6vw;
+  font-family: Poppins;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -662,12 +687,13 @@ div.colaboradores {
 h1.colaboradores {
   /*Layout*/
   text-align: center;
+  padding-top: 6vw;
   /*Styles*/
   color: #000;
   /*Typography*/
   /* Web/H1 */
-  font-family: Rubik;
-  font-size: 6.197vw;
+  font-family: Poppins;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -676,125 +702,123 @@ h1.colaboradores {
 img.colaboradores {
   /*layout*/
   width: 100vw;
-  margin-bottom: 1vw;
 }
 
 /*Area de Footer*/
-
 footer.footer {
-  /*Layout*/
-  padding-top: 20vw;
-  /*Styles*/
-  background-color: #4d45d6;
-}
-
-span.footer {
-  /*Layout*/
   display: flex;
-  justify-content: center;
-  padding-left: 1vw;
-  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(180deg, #4d45d6 35.44%, #2d278c 100%);
 }
 
-img.footer {
-  /*layout*/
-  width: 10vw;
-}
-
-div.footer.texto {
-  /*Layout*/
+div.footer.central {
   display: flex;
-  justify-content: start;
+  flex-direction: row;
+  gap: 20vw;
+  padding: 10vw 7.5vw 5vw 7.5vw;
 }
 
-h3.footer {
-  /*Layout*/
-  margin-left: -5vw;
-  margin-right: -5vw;
-  /*Styles*/
+div.footer.izquierdo {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+h3.footer::before {
+  content: "¡Hola¡";
   color: #fff;
-/*Typography*/
+
   /* Web/H3 */
-  font-family: Rubik;
+  font-family: Poppins;
   font-size: 2vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
-div.footer.link {
-  /*Layout*/
+h3.footer {
+  color: #fff;
+
+  /* Web/H3 */
+  font-family: Poppins;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 3vw;
+}
+
+img.footer.izquierdo {
+  width: 25vw;
+}
+
+div.footer.derecho {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+span.footer.superior {
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  padding-bottom: 4vw;
+}
+
+a.footer.superior {
+  padding-bottom: 1vw;
+  text-decoration: none;
+  color: #fff;
+
+  /* Web/H3 */
+  font-family: Poppins;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+span.footer.inferior {
   display: flex;
   flex-direction: column;
 }
 
-a.footer {
-  /*layout*/
-  padding-bottom: 3vw;
-  margin-left: 9vw;
-  padding-right: 5vw;
-  /*Styles*/
-  text-decoration: transparent;
-  color: #fff;
-  /*Typography*/
-  /* Web/H3 */
-  font-family: Rubik;
-  font-size: 1.7vw;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-div.footer.redes {
-  /*Layout*/
+span.footer.inferior.redes {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-self: flex-start;
 }
 
 h2.footer {
-  /*Layout*/
-  text-align: center;
-  padding-top: 3vw;
-  padding-bottom: 3vw;
-  /*Styles*/
   color: #fff;
-  /*Typography*/
+  text-align: start;
+
   /* Web/H2 */
-  font-family: Rubik;
-  font-size: 3.3vw;
+  font-family: Poppins;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
-div.row.footer {
-  /*Layout*/
-  display: inline;
-  padding-left: 25vw;
-}
-
-img.footer.redes {
-  /*Layout*/
-  width: 10vw;
+img.footer.inferior {
+  width: 5vw;
+  margin-right: 1vw;
 }
 
 div.footer.small {
-  /*Layout*/
   display: flex;
-  justify-content: center;
-  margin-top: 10vw;
-  padding-bottom: 10vw;
+  flex-direction: column;
+  align-self: center;
+  padding-bottom: 5vw;
 }
 
 small.footer {
-  /*Layout*/
-  text-align: center;
-  /*Styles*/
   color: #fff;
-  /*Typographt*/
+
   /* Web/small */
-  font-family: Rubik;
-  font-size: 1.73vw;
+  font-family: Poppins;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
